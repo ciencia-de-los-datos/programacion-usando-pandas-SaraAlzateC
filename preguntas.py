@@ -179,9 +179,8 @@ def pregunta_10():
 
     resultado = lista_letras_numeros.values.tolist()
 
-    tbl04 = pd.DataFrame(resultado, columns=['_c0', '_c1'])
-    tbl04 = tbl04.set_index('_c0')
-    tbl04 = tbl04.set_index('_c0').rename(columns={'_c1': '_c2'})
+    tbl04 = pd.DataFrame(resultado, columns=['_c1', '_c2'])
+    tbl04 = tbl04.set_index('_c1')
 
     """
     Construya una tabla que contenga _c1 y una lista separada por ':' de los valores de
